@@ -13,8 +13,8 @@ package homeWork
  */
 
 fun main() {
-    val nFok = 4
-    val step = 3
+    val nFok = 20
+    val step = 4
     println(fib(nFok, step))
 }
 
@@ -31,6 +31,6 @@ fun fib(n: Int, step: Int): Int {
         false -> step - 2
     }
     for (a in 1..step2)
-        f += fibonacci(n - step2 - a)
+        f += fibonacci(n - a)
     return f
 }
